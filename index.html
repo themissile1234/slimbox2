@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slimbox 2, the ultimate lightweight Lightbox clone for jQuery &middot; digitalia.be</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="canonical" href="http://www.digitalia.be/software/slimbox2/">
+    <link rel="icon" type="image/png" href="images/favicon-192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
+    <link rel="alternate" type="application/rss+xml" title="digitalia.be" href="http://www.digitalia.be/feed">
+
+    <meta name="author" content="Christophe Beyls">
+    <meta name="description" content="Slimbox 2 is a 4 KB visual clone of the popular Lightbox 2 script by Lokesh Dhakar, written using the jQuery javascript library. It was designed to be very small, efficient, standards-friendly, fully customizable, more convenient and 100% compatible with the original Lightbox 2.">
+    <meta name="keywords" content="Slimbox, Lightbox, jQuery, lightweight, javascript, images, gallery, viewer">
+    <meta name="theme-color" content="#2196f3">
+
+    <meta property="og:title" content="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">
+    <meta property="og:description" content="Slimbox 2 is a 4 KB visual clone of the popular Lightbox 2 script by Lokesh Dhakar, written using the jQuery javascript library. It was designed to be very small, efficient, standards-friendly, fully customizable, more convenient and 100% compatible with the original Lightbox 2.">
+    <meta property="og:site_name" content="digitalia.be">
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="http://www.digitalia.be/software/slimbox2/">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@BladeCoder">
+    <meta name="twitter:title" content="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">
+    <meta name="twitter:description" content="Slimbox 2 is a 4 KB visual clone of the popular Lightbox 2 script by Lokesh Dhakar, written using the jQuery javascript library. It was designed to be very small, efficient, standards-friendly, fully customizable, more convenient and 100% compatible with the original Lightbox 2.">
+
+    <link rel="stylesheet" href="css/slimbox2.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-toggle-wrapper visible-xs">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <a href="/" class="navbar-brand" title="Christophe Beyls' homepage">digitalia<span class="text-muted">.be</span></a>
+        </div>
+        <div class="collapse navbar-collapse js-navbar-collapse">
+          <ul class="navbar-nav nav">
+            <li><a href="/archive/">Archive</a></li>
+<li class="active"><a href="/software/">Software</a></li>
+<li class="hidden-xs"><a href="http://www.digitalia.be/feed" title="Subscribe to RSS feed"><i class="fas fa-rss fa-lg"></i><span class="hidden">RSS Feed</span></a></li>
+
+          </ul>
+          <ul class="navbar-nav nav navbar-right">
+            <li class="pull-left"><a href="https://twitter.com/BladeCoder" title="@BladeCoder on Twitter"><i class="fab fa-twitter fa-lg"></i><span class="hidden">Twitter</span></a></li>
+<li class="pull-left"><a href="https://medium.com/@BladeCoder/latest" title="@BladeCoder on Medium"><i class="fab fa-medium fa-lg"></i><span class="hidden">Medium</span></a></li>
+<li class="pull-left"><a href="https://github.com/cbeyls" title="cbeyls on GitHub"><i class="fab fa-github fa-lg"></i><span class="hidden">GitHub</span></a></li>
+<li class="pull-left"><a href="https://www.youtube.com/user/digitaliabe/videos" title="digitalia.be channel on YouTube"><i class="fab fa-youtube fa-lg"></i><span class="hidden">YouTube</span></a></li>
+<li class="pull-left"><a href="https://www.linkedin.com/in/cbeyls" title="Christophe Beyls on LinkedIn"><i class="fab fa-linkedin fa-lg"></i><span class="hidden">LinkedIn</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container container-main">
+      <div class="row">
+        
+          <div class="col-sm-10 col-sm-offset-1">
+            <header class="post-header">
+  <h1 class="post-title-main">Slimbox 2, the ultimate lightweight Lightbox clone for jQuery</h1>
+</header>
+
+<nav>
+  <ul class="nav nav-pills">
+    <li role="presentation"><a href="#introduction">Introduction</a></li>
+    <li role="presentation"><a href="#demo">Demo</a></li>
+    <li role="presentation"><a href="#features">Features</a></li>
+    <li role="presentation"><a href="#compatibility">Compatibility</a></li>
+    <li role="presentation"><a href="#requirements">Requirements</a></li>
+    <li role="presentation"><a href="#usage">Usage</a></li>
+    <li role="presentation"><a href="#download">Download</a></li>
+    <li role="presentation"><a href="#get-help">Get Help</a></li>
+    <li role="presentation"><a href="#changelog">Changelog</a></li>
+  </ul>
+</nav>
+
+<article class="post-content">
+  <h2 id="introduction">Introduction</h2>
+<p>Slimbox 2 is a <strong>4 KB</strong> visual clone of the popular <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox 2</a> script by Lokesh Dhakar, written using the <a href="http://jquery.com">jQuery</a> javascript library. It was designed to be very small, efficient, standards-friendly, fully customizable, more convenient and 100% compatible with the original Lightbox 2.</p>
+<h2 id="demo">Demo</h2>
+<h3>Single images</h3>
+<p class="clearfix"><a href="/images/software/slimbox/gilles-barvaux.jpg" rel="lightbox" title="The Gilles, one of the Belgian cultural traditions. Here at Barvaux." class="thumbnail pull-left"><img src="images/gilles-barvaux_thumb.jpg" alt="Gilles at Barvaux"></a><a href="/images/software/slimbox/gates-pie.jpg" rel="lightbox" title="Bill Gates, after receiving a pie in the face during his visit in Brussels, Belgium in 1998." class="thumbnail pull-left"><img src="images/gates-pie_thumb.jpg" alt="Gates gets a pie"></a></p>
+<h3>Image set</h3>
+<p>These are pictures I took during a journey through India and Nepal.</p>
+<p class="clearfix"><a href="http://lh4.ggpht.com/_ulFT64pJhRg/R_pZbdy8cMI/AAAAAAAAAQs/_SI-xRil6Ek/s512/IMG_1087.JPG" rel="lightbox-journey" title="Indian temple dedicated to Kamasutra. In addition to the mouse, you may also use the arrow keys to instantly navigate between images and the escape key to close Slimbox." class="thumbnail pull-left"><img src="images/IMG_1087.JPG" alt=""></a><a href="http://lh3.ggpht.com/_ulFT64pJhRg/R_pf2Ny8gZI/AAAAAAAAA2g/KxsmFwcOcd0/s512/IMG_1447.JPG" rel="lightbox-journey" title="Street in Old Delhi." class="thumbnail pull-left"><img src="images/IMG_1447.JPG" alt=""></a><a href="http://lh3.ggpht.com/_ulFT64pJhRg/R_pa8Ny8dYI/AAAAAAAAAag/mXNoC9jXmiI/s512/IMG_1190.JPG" rel="lightbox-journey" title="Stupa in Kathmandu. Next and previous images of the group are automatically preloaded in the background." class="thumbnail pull-left"><img src="images/IMG_1190.JPG" alt=""></a><a href="http://lh5.ggpht.com/_ulFT64pJhRg/R_peDty8fQI/AAAAAAAAAss/LXkYZYXfolE/s512/IMG_1349.JPG" rel="lightbox-journey" title="Trekking in the Himalayas." class="thumbnail pull-left"><img src="images/IMG_1349.JPG" alt=""></a><a href="http://lh4.ggpht.com/_ulFT64pJhRg/R_pb3dy8d7I/AAAAAAAAAfs/_ba2zdElMWc/s512/IMG_1230.JPG" rel="lightbox-journey" title="Monkey Temple in Nepal. Slimbox allows you to customize its appearance, each animation, the text in the caption and the keyboard mapping." class="thumbnail pull-left"><img src="images/IMG_1230.JPG" alt=""></a></p>
+<h2 id="features">Features</h2>
+<p>From a <em>functional</em> point of view, Slimbox 2 has the following added features compared to the original Lightbox:</p>
+<ul>
+	<li>Slimbox is ready to launch as soon as the document is ready. This means that you don&#8217;t have to wait for all images of the page to be loaded before clicking on a link that will launch the Lightbox effect.</li>
+	<li>Slimbox also centers images vertically on startup, not just horizontally. Vertical scrolling is still possible.</li>
+	<li>It works perfectly on horizontal-scrolling websites.</li>
+	<li>It temporary hides flash animations and other embedded videos while it is open to avoid display bugs in some browsers. It also hides select boxes in Internet Explorer 6.</li>
+	<li>Using a special option (&#8220;loop&#8221;), it allows you to navigate between the first and last images.</li>
+	<li>Slimbox is more responsive; it allows you to close it immediately at any time using the keyboard or mouse and to instantly navigate to any image before the current image has loaded or the animations are complete.</li>
+	<li>The script is more robust; for example you can try to start and stop Slimbox or navigate between images very quickly to interrupt the animations and resume them and you won&#8217;t notice any bug like in the original Lightbox where sometimes the animation stops or the elements are wrongly sized or positioned.</li>
+	<li>Slimbox can be launched from the traditional image links inside the page like the original Lightbox, but also directly from Javascript using its complete <span class="caps">API</span>.</li>
+</ul>
+<p>From a <em>design</em> point of view, Slimbox 2 is very different from Lightbox:</p>
+<ul>
+	<li>The code is optimized to an insane level and has been written from scratch with efficiency in mind for the jQuery library instead of the huge Prototype/Scriptaculous. The script itself is as tiny as 4kb (minified, uncompressed).</li>
+	<li>Slimbox can be entirely customized thanks to many options. You can change the duration of any effect, the counter text translation or even the navigtation keys.</li>
+	<li>Slimbox has a much more powerful <a href="https://github.com/cbeyls/slimbox/wiki/jQuery-API"><span class="caps">API</span></a>, allowing you to apply the Lightbox effect easily on any clickable element or from any script. For example, it can be easily integrated with links pointing to Flickr or Picasa Web Albums pages or with any javascript image gallery.</li>
+	<li>The Slimbox Cascading Style Sheets are simpler and 100% valid (no more <span class="caps">CSS</span> hacks). Also, every visual aspect of Slimbox (including images) is specified in the <span class="caps">CSS</span> instead of the Javascript so it is easier to style. You may even change any border size in the <span class="caps">CSS</span> and Slimbox will still work fine, which means that nothing is &#8220;hard-coded&#8221; in the source code.</li>
+</ul>
+<p>Slimbox 2 is currently the smallest Lightbox-like script available for the jQuery library.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>Slimbox 2 is compatible with all modern browsers: Firefox 2+, Internet Explorer 6+, Opera 9+ and Opera for Wii, Safari 3+, Camino and Google Chrome.</p>
+<p>It works with both strict mode and quirks mode web pages.</p>
+<p>Unlike many Lightbox-like scripts, it displays fine in case of horizontal scrolling of the web page.</p>
+<p>It is disabled by default on mobile devices (Android, iPhone/iPod, Symbian, Windows Mobile, BlackBerry).</p>
+<p class="alert alert-info"><strong>Note:</strong> there is a bug in Google Chrome versions 4 to 8 for Linux with many non-english locales, causing the overlay to stay invisible when Slimbox is opened. This bug does not affect other operating systems and was fixed since Chrome 9.</p>
+<h2 id="requirements">Requirements</h2>
+<p>Slimbox 2.05 requires the <a href="http://jquery.com/">jQuery</a> library, <strong>version 1.3</strong> or more recent. If you don&#8217;t already have it, you can download jQuery from its official website.</p>
+<h2 id="usage">Usage</h2>
+<p>Usage is exactly the same as for Lightbox by default, but Slimbox 2 offers more options.</p>
+<p>Because it was designed to be 100% compatible with Lightbox, you just need to replace the scripts combination &#8220;Prototype + Scriptaculous + Lightbox&#8221; with &#8220;jQuery + Slimbox 2&#8221; in the header of your pages and your Lightbox effects will work just as well as before. Well, a little better.</p>
+<h3>Setup</h3>
+<p>1. Include the script in the header of your page, after the inclusion of the jQuery library:</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"js/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"js/slimbox2.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure><p>There are some options that you can specify in the form of a javascript object inside the script (look for &#8220;put custom options here&#8221;). The default values should be just fine, however if you want you can change the following:</p>
+<ul>
+	<li><strong>loop:</strong> Boolean; if set to <code>true</code>, allows the user to navigate between the first and last images of a Slimbox gallery, when there is more than one image to display. Default is <code>false</code>.</li>
+	<li><strong>overlayOpacity:</strong> The level of opacity of the background overlay. <code>1</code> Is opaque, <code>0</code> is completely transparent. You can change the color in the <span class="caps">CSS</span> file. Default is <code>0.8</code>.</li>
+	<li><strong>overlayFadeDuration:</strong> The duration of the overlay fade-in and fade-out animations, in milliseconds. Set it to <code>1</code> to disable the overlay fade effects. Default is <code>400</code>.</li>
+	<li><strong>resizeDuration:</strong> The duration of the resize animation for width and height, in milliseconds. Set it to <code>1</code> to disable resize animations. Default is <code>400</code>.</li>
+	<li><strong>resizeEasing:</strong> The name of the easing effect that you want to use for the resize animation (<a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing Plugin</a> required). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well. Default is jQuery&#8217;s built-in default easing, <code>"swing"</code>.</li>
+	<li><strong>initialWidth:</strong> The initial width of the box, in pixels. Default is <code>250</code>.</li>
+	<li><strong>initialHeight:</strong> The initial height of the box, in pixels. Default is <code>250</code>.</li>
+	<li><strong>imageFadeDuration:</strong> The duration of the image fade-in animation, in milliseconds. Set it to <code>1</code> to disable this effect and make the image appear instantly. Default is <code>400</code>.</li>
+	<li><strong>captionAnimationDuration:</strong> The duration of the caption animation, in milliseconds. Set it to <code>1</code> to disable it and make the caption appear instantly. Default is <code>400</code>.</li>
+	<li><strong>counterText:</strong> Text value; allows you to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, <code>{x}</code> will be replaced by the current image index, and <code>{y}</code> will be replaced by the total number of images. Set it to <code>false</code> (boolean value, without quotes) or <code>""</code> to disable the counter display. Default is <code>"Image {x} of {y}"</code>.</li>
+	<li><strong>closeKeys:</strong> An array of <a href="http://www.asquare.net/javascript/tests/KeyCode.html">key codes</a> of the keys to press to close Slimbox. Default is <code>[27, 88, 67]</code> which means Esc (27), &#8220;x&#8221; (88) and &#8220;c&#8221; (67).</li>
+	<li><strong>previousKeys:</strong> An array of <a href="http://www.asquare.net/javascript/tests/KeyCode.html">key codes</a> of the keys to press to navigate to the previous image. Default is <code>[37, 80]</code> which means Left arrow (37) and &#8220;p&#8221; (80).</li>
+	<li><strong>nextKeys:</strong> An array of <a href="http://www.asquare.net/javascript/tests/KeyCode.html">key codes</a> of the keys to press to navigate to the next image. Default is <code>[39, 78]</code> which means Right arrow (39) and &#8220;n&#8221; (78).</li>
+</ul>
+<p>Example of a custom options object, including french translation:</p>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+    <span class="nl">overlayOpacity</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">,</span>
+    <span class="nx">resizeEasing</span><span class="err">:</span> <span class="s2">"easeOutElastic"</span><span class="p">,</span>
+    <span class="nx">captionAnimationDuration</span><span class="err">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nx">counterText</span><span class="err">:</span> <span class="s2">"Image {x} sur {y}"</span><span class="p">,</span>
+    <span class="nx">closeKeys</span><span class="err">:</span> <span class="p">[</span><span class="mi">27</span><span class="p">,</span> <span class="mi">70</span><span class="p">],</span>
+    <span class="nx">nextKeys</span><span class="err">:</span> <span class="p">[</span><span class="mi">39</span><span class="p">,</span> <span class="mi">83</span><span class="p">]</span>
+<span class="p">}</span></code></pre></figure><p>2. Include the <span class="caps">CSS</span> file in the header of your page, or add it to an existing <span class="caps">CSS</span> style sheet:</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/slimbox2.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">media=</span><span class="s">"screen"</span> <span class="nt">/&gt;</span></code></pre></figure><p>Or, if you are using a right-to-left language:</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/slimbox2-rtl.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">media=</span><span class="s">"screen"</span> <span class="nt">/&gt;</span></code></pre></figure><p>If you keep the provided <span class="caps">CSS</span> as is, you must place the 4 required images in the same folder as the <span class="caps">CSS</span> file. Of course you can change the images or move them to another place, then you just need to edit the <span class="caps">CSS</span> URLs (and the image width and height for the &#8220;Close&#8221; image) to reflect your changes. You don&#8217;t even need to edit the javascript.</p>
+<p>You can also change the fonts for the caption and the image counter, the width of the border around the lightbox and the caption, the margins in the caption and every color. You must not add new <span class="caps">CSS</span> rules.</p>
+<h3>Activate</h3>
+<p>Add the <code>rel="lightbox"</code> attribute to the links pointing to your full-sized images. Use the optional title attribute if you want to show a caption:</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"images/image-1.jpg"</span> <span class="na">rel=</span><span class="s">"lightbox"</span> <span class="na">title=</span><span class="s">"my caption"</span><span class="nt">&gt;</span>image #1<span class="nt">&lt;/a&gt;</span></code></pre></figure><p>You can even use <span class="caps">HTML</span> in the caption if you want. You must replace the &lt; and &gt; characters with <span class="caps">HTML</span> entities and use single quotes instead of double quotes.</p>
+<p>For sets of related images that you want to group and make navigable, add a group name to the <code>rel</code> attribute just after the &#8220;lightbox&#8221; word, for example:</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"images/image-1.jpg"</span> <span class="na">rel=</span><span class="s">"lightbox-cats"</span><span class="nt">&gt;</span>image #1<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"images/image-2.jpg"</span> <span class="na">rel=</span><span class="s">"lightbox-cats"</span><span class="nt">&gt;</span>image #2<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"images/image-3.jpg"</span> <span class="na">rel=</span><span class="s">"lightbox-cats"</span><span class="nt">&gt;</span>image #3<span class="nt">&lt;/a&gt;</span></code></pre></figure><p>I don&#8217;t recommend using square brackets &#8220;[ ]&#8221; around group names in the <code>rel</code> attribute like the original Lightbox script does because these characters are invalid for <span class="caps">XHTML</span> and <span class="caps">XML</span> attributes, meaning that your web page would not validate against the latest standards.</p>
+<h3><span class="caps">API</span> for Javascript programming</h3>
+<p>Additionally, Slimbox also allows you to:</p>
+<ul>
+	<li>Launch Slimbox directly from Javascript code to display a single image or a collection of images.</li>
+	<li>Register any link or <span class="caps">DOM</span> element for opening Slimbox when clicking.</li>
+	<li>Change the way the image <span class="caps">URL</span> and description are retrieved from <span class="caps">DOM</span> elements.</li>
+	<li>Create custom image groups based on any criteria.</li>
+</ul>
+<p>Please read the <a href="https://github.com/cbeyls/slimbox/wiki/jQuery-API">complete <span class="caps">API</span> documentation</a> to learn how to do this. The possibilities are limitless.</p>
+<h2 id="download">Download</h2>
+<p>Slimbox is free software released under <a href="http://www.opensource.org/licenses/mit-license.php"><span class="caps">MIT</span> License</a>.<br>
+If you like it, talk about it and promote it by linking to this page.</p>
+<p><a href="https://github.com/cbeyls/slimbox/releases/tag/2.05" class="btn btn-primary"><i class="fas fa-download"></i> Slimbox 2.05</a></p>
+<h2 id="get-help">Get Help</h2>
+<p>First, please read the <a href="https://github.com/cbeyls/slimbox/wiki/FAQ"><span class="caps">FAQ</span></a>.</p>
+<p>If the answer of your question is not there, you can ask it on the <a href="http://groups.google.com/group/slimbox-support">Slimbox Google Group</a>.</p>
+<p>Please note that I distribute Slimbox &#8220;as is&#8221;, I don&#8217;t get any money for it, and therefore I have no time to do support for it and I won&#8217;t answer trivial questions.</p>
+<h2 id="changelog">Changelog</h2>
+<p><strong>v2.05 (2013-05-07)</strong></p>
+<ul>
+	<li>Backward-compatible fix for jQuery 1.9 and 2.0.</li>
+	<li>Removed obsolete Android Market extra script.</li>
+</ul>
+<p><strong>v2.04 (2010-04-28)</strong></p>
+<ul>
+	<li>Fixed a bug with jQuery 1.4, where flash animations would not reappear after being hidden.</li>
+	<li>Removed compatibility code for Opera 9.5+ and Opera for Wii used with jQuery 1.2.6. The minimum required version of jQuery is now 1.3.</li>
+	<li>Added <span class="caps">CSS</span> file for full support of right-to-left languages. Everything is inverted, including &#8220;previous&#8221; and &#8220;next&#8221; buttons.</li>
+	<li>Added an extra script for displaying QR codes when clicking on Android Market links in desktop browsers.</li>
+	<li>Added an extra script for automatic fixing of invalid URLs.</li>
+</ul>
+<p><strong>v2.03 (2009-11-19)</strong></p>
+<ul>
+	<li>Now Slimbox does not activate by default on mobile devices.</li>
+</ul>
+<p><strong>v2.02 (2009-01-28)</strong></p>
+<ul>
+	<li>Fixed a bug in smart preloading which caused Slimbox to perform an unnecessary <span class="caps">HTTP</span> <span class="caps">GET</span> request.</li>
+	<li>The Picasa Web Albums integration example script is now also compatible with square thumbnails.</li>
+</ul>
+<p><strong>v2.01 (2009-01-12)</strong></p>
+<ul>
+	<li>Fixed compatibility code for Opera 9.5+ and Opera for Wii which was not working with quirks mode web pages.</li>
+	<li>Fixed the provided extra script &#8220;autoactivation.js&#8221; which was not working because it was still using a MooTools function.</li>
+</ul>
+<p><strong>v2.0 (2008-12-31)</strong></p>
+<ul>
+	<li>Initial release, provides the same features set as <a href="/software/slimbox/">Slimbox 1.68 for MooTools</a> with better browser compatibility.</li>
+</ul>
+</article>
+
+          </div>
+        
+      </div>
+      <footer class="row footer">
+        <div class="col-sm-12 text-center">
+          <p>&copy; 2018 Christophe Beyls. 
+Built with <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a> and <a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a>.</p>
+
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/slimbox2.js"></script>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-760577-4', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+
+  </body>
+</html>
